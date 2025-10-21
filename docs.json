@@ -28,6 +28,32 @@
               "essentials/navigation"
             ]
           },
+          
+          {
+            "group": "Writing content",
+            "pages": [
+              "essentials/markdown",
+              "essentials/code",
+              "essentials/images",
+              "essentials/reusable-snippets"
+            ]
+          },
+          {
+            "group": "Mechanicals Users",
+            "pages": [
+              "mechanicals-users/ajustes_taller",
+              "mechanicals-users/configuracion_organizacion",
+              "mechanicals-users/suscripcion_cobro",
+              "mechanicals-users/gestion_usuarios",
+              "mechanicals-users/gestion_productos",
+              "mechanicals-users/gestion_ordenes",
+              "mechanicals-users/vendor_management",
+              "mechanicals-users/dashboard_usage",
+              "mechanicals-users/agendar_servicio",
+              "mechanicals-users/agenda_taller",
+              "mechanicals-users/categorias_shopify"
+            ]
+          },
           {
             "group": "Writing content",
             "pages": [
