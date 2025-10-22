@@ -41,17 +41,17 @@
           {
             "group": "Mechanicals Users",
             "pages": [
-              "mechanicals-users/ajustes_taller",
-              "mechanicals-users/configuracion_organizacion",
-              "mechanicals-users/suscripcion_cobro",
-              "mechanicals-users/gestion_usuarios",
-              "mechanicals-users/gestion_productos",
-              "mechanicals-users/gestion_ordenes",
-              "mechanicals-users/vendor_management",
-              "mechanicals-users/dashboard_usage",
-              "mechanicals-users/agendar_servicio",
-              "mechanicals-users/agenda_taller",
-              "mechanicals-users/categorias_shopify"
+              "mechanical-users/ajustes_taller",
+              "mechanical-users/configuracion_organizacion",
+              "mechanical-users/suscripcion_cobro",
+              "mechanical-users/gestion_usuarios",
+              "mechanical-users/gestion_productos",
+              "mechanical-users/gestion_ordenes",
+              "mechanical-users/vendor_management",
+              "mechanical-users/dashboard_usage",
+              "mechanical-users/agendar_servicio",
+              "mechanical-users/agenda_taller",
+              "mechanical-users/categorias_shopify"
             ]
           },
           {
