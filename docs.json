@@ -14,28 +14,11 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "¿Quiénes somos?",
             "pages": [
               "index",
               "quickstart",
               "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
             ]
           },
           {
@@ -47,48 +30,13 @@
               "mechanical-users/gestion_usuarios",
               "mechanical-users/gestion_productos",
               "mechanical-users/gestion_ordenes",
-              "mechanical-users/vendor_management",
               "mechanical-users/dashboard_usage",
-              "mechanical-users/agendar_servicio",
               "mechanical-users/agenda_taller",
-              "mechanical-users/categorias_shopify"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "mechanical-users/shopify",
+              "mechanical-users/gestion_roles",
+              "mechanical-users/Check-in",
+              "mechanical-users/Servicios",
+              "mechanical-users/panel_mecanico"
             ]
           }
         ]
@@ -97,8 +45,8 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "Servana",
+          "href": "https://servana.mx/",
           "icon": "book-open-cover"
         },
         {

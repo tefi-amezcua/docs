@@ -1,0 +1,165 @@
+---
+title: "SOP · Gestión de la Agenda del Taller"
+description: "Guía para el uso efectivo de la sección de Agenda del Taller, incluyendo la gestión de disponibilidad de mecánicos y la asignación de órdenes de servicio."
+---
+
+## Procedimiento Operativo Estándar para la Gestión de la Agenda del Taller
+
+<Info>
+Este documento describe cómo utilizar la sección de Agenda del Taller para gestionar la disponibilidad de los mecánicos y asignar órdenes de servicio de manera eficiente.
+</Info>
+
+### Vistas Disponibles
+
+<Steps titleSize="h4">
+  <Step title="1 · Vista General (All Mechanics Schedule)" icon="layout-dashboard" iconType="solid" stepNumber={1}>
+    <ul>
+      <li>Muestra todos los mecánicos y sus asignaciones en una vista de línea de tiempo</li>
+      <li>Permite ver la carga de trabajo de todo el equipo</li>
+      <li>Ideal para la planificación general del taller</li>
+    </ul>
+  </Step>
+
+  <Step title="2 · Vista Diaria (Daily Schedule)" icon="calendar-day" iconType="solid" stepNumber={2}>
+    <ul>
+      <li>Enfoque en las asignaciones del día actual</li>
+      <li>Muestra la disponibilidad de cada mecánico</li>
+      <li>Facilita la asignación de órdenes de servicio</li>
+    </ul>
+  </Step>
+
+  <Step title="3 · Calendario del Mecánico" icon="user-clock" iconType="solid" stepNumber={3}>
+    <ul>
+      <li>Vista detallada de la programación de un mecánico específico</li>
+      <li>Permite gestionar la disponibilidad por día y hora</li>
+      <li>Útil para programar días libres o vacaciones</li>
+    </ul>
+  </Step>
+</Steps>
+
+### Gestión de Disponibilidad
+
+<Accordion>
+  <AccordionItem title="Configurar Horario Base" defaultOpen={true}>
+    <ul>
+      <li>Accede a la configuración de disponibilidad del mecánico</li>
+      <li>Establece las horas de trabajo regulares para cada día de la semana</li>
+      <li>Especifica los horarios de comida o descansos</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Modificar Disponibilidad">
+    <ul>
+      <li>Haz clic en un día específico para ajustar la disponibilidad</li>
+      <li>Marca días completos como no disponibles (vacaciones, días libres)</li>
+      <li>Ajusta horarios para días específicos cuando sea necesario</li>
+    </ul>
+  </AccordionItem>
+
+  <AccordionItem title="Indisponibilidad Temporal">
+    <ul>
+      <li>Programa periodos de indisponibilidad (capacitaciones, mantenimiento)</li>
+      <li>Establece recordatorios para cuando el mecánico regrese</li>
+    </ul>
+  </AccordionItem>
+</Accordion>
+
+### Asignación de Órdenes de Servicio
+
+<Tabs>
+  <TabList>
+    <Tab>Asignación Manual</Tab>
+    <Tab>Reasignación</Tab>
+    <Tab>Órdenes No Asignadas</Tab>
+  </TabList>
+
+  <TabPanel>
+    <ul>
+      <li>Arrastra y suelta órdenes de servicio a los espacios disponibles</li>
+      <li>Visualiza conflictos de programación en tiempo real</li>
+      <li>Ajusta la duración estimada según sea necesario</li>
+    </ul>
+  </TabPanel>
+
+  <TabPanel>
+    <ul>
+      <li>Cambia mecánicos arrastrando la orden a otro técnico</li>
+      <li>El sistema mostrará advertencias por conflictos de horario</li>
+      <li>Confirma los cambios para actualizar la programación</li>
+    </ul>
+  </TabPanel>
+
+  <TabPanel>
+    <ul>
+      <li>Visualiza las órdenes pendientes de asignación</li>
+      <li>Filtra por tipo de servicio, prioridad o tiempo estimado</li>
+      <li>Asigna órdenes con un solo clic a mecánicos disponibles</li>
+    </ul>
+  </TabPanel>
+</Tabs>
+
+### Mejores Prácticas
+
+<Grid cols={3} gap={4}>
+  <Card>
+    <CardHeader>
+      <CalendarIcon />
+      <h4>Planificación Semanal</h4>
+    </CardHeader>
+    <CardContent>
+      <ul>
+        <li>Revisa la programación al inicio de cada semana</li>
+        <li>Ajusta la disponibilidad según las necesidades</li>
+        <li>Comunica los cambios al equipo</li>
+      </ul>
+    </CardContent>
+  </Card>
+
+  <Card>
+    <CardHeader>
+      <UsersIcon />
+      <h4>Gestión de Carga</h4>
+    </CardHeader>
+    <CardContent>
+      <ul>
+        <li>Distribuye equitativamente las órdenes</li>
+        <li>Considera habilidades especializadas</li>
+        <li>Balancea mantenimientos y reparaciones</li>
+      </ul>
+    </CardContent>
+  </Card>
+
+  <Card>
+    <CardHeader>
+      <ClockIcon />
+      <h4>Actualizaciones</h4>
+    </CardHeader>
+    <CardContent>
+      <ul>
+        <li>Actualiza estados en tiempo real</li>
+        <li>Marca órdenes completadas</li>
+        <li>Comunica cambios inmediatamente</li>
+      </ul>
+    </CardContent>
+  </Card>
+</Grid>
+
+### Solución de Problemas Comunes
+
+<Callout type="warning" title="Atención">
+  <ul>
+    <li><strong>Conflicto de Horarios:</strong> Advertencias de solapamiento</li>
+    <li><strong>Sobrecarga:</strong> Mecánicos con demasiadas asignaciones</li>
+    <li><strong>Tiempos Muertos:</strong> Sugerencias de optimización</li>
+  </ul>
+</Callout>
+
+### Notas Importantes
+
+<Warning>
+  <ul>
+    <li>Los cambios en disponibilidad afectan asignaciones futuras</li>
+    <li>Las órdenes urgentes pueden requerir ajustes</li>
+    <li>Verifica disponibilidad antes de comprometer fechas</li>
+  </ul>
+</Warning>

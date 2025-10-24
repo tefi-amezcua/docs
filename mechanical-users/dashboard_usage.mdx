@@ -1,0 +1,183 @@
+---
+title: "SOP · Panel de Análisis para Mecánicos"
+description: "Guía de uso de las métricas clave del dashboard de mecánicos"
+---
+
+## Módulos Clave del Dashboard
+
+<Grid cols={2} gap={6}>
+  <Card>
+    <CardHeader>
+      <BarChart2Icon />
+      <h3>1. Ventas</h3>
+      <Badge>Dashboard Principal</Badge>
+    </CardHeader>
+    <CardContent>
+      <p className="text-muted-foreground">Monitorear el desempeño comercial del taller</p>
+      
+      <div className="mt-4 space-y-2">
+        <h4 className="font-medium">Métricas Principales</h4>
+        <ul className="list-disc pl-5 space-y-1">
+          <li><strong>Ventas Totales</strong> (hoy/semana/mes)</li>
+          <li><strong>Ticket Promedio</strong> por servicio</li>
+          <li><strong>Servicios Adicionales</strong> vendidos</li>
+          <li><strong>Comparativa</strong> con período anterior</li>
+        </ul>
+      </div>
+
+      <div className="mt-4">
+        <h4 className="font-medium">Acciones</h4>
+        <div className="flex flex-wrap gap-2 mt-2">
+          <Button variant="outline" size="sm">
+            <FilterIcon className="mr-2 h-4 w-4" />
+            Filtrar fechas
+          </Button>
+          <Button variant="outline" size="sm">
+            <DownloadIcon className="mr-2 h-4 w-4" />
+            Exportar
+          </Button>
+          <Button variant="outline" size="sm">
+            <TrendingUpIcon className="mr-2 h-4 w-4" />
+            Ver tendencias
+          </Button>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+
+  <Card>
+    <CardHeader>
+      <CheckCircle2Icon />
+      <h3>2. Órdenes Completadas</h3>
+      <Badge variant="outline">CompletedOrders.tsx</Badge>
+    </CardHeader>
+    <CardContent>
+      <p className="text-muted-foreground">Revisar el historial de servicios terminados</p>
+      
+      <div className="mt-4 space-y-4">
+        <div>
+          <h4 className="font-medium">Contenido</h4>
+          <ul className="list-disc pl-5 space-y-1 mt-2">
+            <li>Listado de servicios finalizados</li>
+            <li>Tiempo de ejecución</li>
+            <li>Repuestos utilizados</li>
+            <li>Clasificación por tipo de servicio</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="font-medium">Acciones</h4>
+          <div className="flex flex-wrap gap-2 mt-2">
+            <Button variant="outline" size="sm">
+              <SearchIcon className="mr-2 h-4 w-4" />
+              Buscar órdenes
+            </Button>
+            <Button variant="outline" size="sm">
+              <FilterIcon className="mr-2 h-4 w-4" />
+              Filtrar
+            </Button>
+          </div>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+
+  <Card>
+    <CardHeader>
+      <UsersIcon />
+      <h3>3. Utilización de Mecánicos</h3>
+      <Badge variant="outline">MechanicUtilization.tsx</Badge>
+    </CardHeader>
+    <CardContent>
+      <p className="text-muted-foreground">Optimizar la carga de trabajo del equipo</p>
+      
+      <div className="mt-4 space-y-4">
+        <div>
+          <h4 className="font-medium">Métricas</h4>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Horas trabajadas vs. disponibles</li>
+            <li>Ocupación por turno</li>
+            <li>Tiempo promedio por servicio</li>
+            <li>Capacidad disponible</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="font-medium">Acciones</h4>
+          <div className="flex flex-wrap gap-2 mt-2">
+            <Button variant="outline" size="sm">
+              <SettingsIcon className="mr-2 h-4 w-4" />
+              Ajustar asignaciones
+            </Button>
+          </div>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+
+  <Card>
+    <CardHeader>
+      <AwardIcon />
+      <h3>4. Servicios Más Vendidos</h3>
+      <Badge variant="outline">TopServices.tsx</Badge>
+    </CardHeader>
+    <CardContent>
+      <p className="text-muted-foreground">Identificar servicios populares y rentables</p>
+      
+      <div className="mt-4 space-y-4">
+        <div>
+          <h4 className="font-medium">Datos</h4>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Ranking de servicios</li>
+            <li>Frecuencia de solicitud</li>
+            <li>Rentabilidad por servicio</li>
+            <li>Estacionalidad</li>
+          </ul>
+        </div>
+      </div>
+    </CardContent>
+  </Card>
+</Grid>
+
+## Consejos de Uso
+
+<Accordion type="single" collapsible className="w-full">
+  <AccordionItem value="analisis-diario">
+    <AccordionTrigger>Análisis Diario</AccordionTrigger>
+    <AccordionContent>
+      <ul className="list-disc pl-5 space-y-2">
+        <li>Revisar métricas clave al inicio del turno</li>
+        <li>Identificar prioridades</li>
+        <li>Asignar recursos según disponibilidad</li>
+      </ul>
+    </AccordionContent>
+  </AccordionItem>
+
+  <AccordionItem value="toma-decisiones">
+    <AccordionTrigger>Toma de Decisiones</AccordionTrigger>
+    <AccordionContent>
+      <ul className="list-disc pl-5 space-y-2">
+        <li>Basar ajustes en datos históricos</li>
+        <li>Monitorear impacto de cambios</li>
+        <li>Compartir logros con el equipo</li>
+      </ul>
+    </AccordionContent>
+  </AccordionItem>
+
+  <AccordionItem value="reportes">
+    <AccordionTrigger>Reportes</AccordionTrigger>
+    <AccordionContent>
+      <ul className="list-disc pl-5 space-y-2">
+        <li>Generar reportes semanales</li>
+        <li>Comparar con objetivos establecidos</li>
+        <li>Identificar tendencias a largo plazo</li>
+      </ul>
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
+
+<Callout className="mt-6" type="info" icon={<InfoIcon />}>
+  <p className="text-sm">
+    <strong>Nota:</strong> Los datos se actualizan cada 5 minutos. Para información en tiempo real, usa el botón de actualización.
+  </p>
+</Callout>

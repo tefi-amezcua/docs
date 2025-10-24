@@ -1,0 +1,216 @@
+---
+title: "SOP · Gestión de Productos y Catálogo (Integración Shopify)"
+description: "Procedimiento para la gestión completa de productos, categorías, proveedores y sincronización con Shopify."
+---
+
+## Procedimiento Operativo Estándar para la Gestión de Productos
+
+Este SOP detalla el flujo de trabajo para la administración de productos, incluyendo la creación manual, gestión de variantes, importación desde Shopify y control de inventario.
+
+---
+
+### A. Gestión Básica de Productos
+
+<Steps titleSize="h3">
+  <Step title="Paso 1 · Acceso al Módulo de Productos" icon="box-open" iconType="solid" stepNumber={1}>
+    Accede al panel de administración del sistema.
+    <ul>
+      <li>Navega a **"Productos"** en el menú principal.</li>
+      <li>Selecciona **"Gestión de Productos"** para ver el catálogo completo.</li>
+    </ul>
+  </Step>
+
+  <Step title="Paso 2 · Crear Producto Manualmente" icon="plus" iconType="solid" stepNumber={2}>
+    Añade un nuevo producto al catálogo local.
+    <ul>
+      <li>Haz clic en **"Agregar Producto"** (`+ Agregar Producto`).</li>
+      <li>Completa los campos obligatorios:</li>
+      <li>- **Nombre**: Nombre del producto o servicio</li>
+      <li>- **Descripción**: Detalles del producto</li>
+      <li>- **Categoría**: Selecciona de la lista o deja "Sin categoría"</li>
+      <li>- **Proveedor**: Selecciona de la lista o deja "Sin proveedor"</li>
+      <li>- **Tipo de Producto**: servicio, pieza, o servicio externo</li>
+      <li>Configura estados: **Activo** (visible en sistema) y **Público** (visible para clientes).</li>
+      <li>Selecciona **Tipos de Bicicleta Aplicables**: mountain, road, hybrid, electric, bmx, all.</li>
+    </ul>
+  </Step>
+
+  <Step title="Paso 3 · Gestionar Variantes" icon="layer-group" iconType="solid" stepNumber={3}>
+    Configura las opciones de variación del producto.
+    <ul>
+      <li>Para productos con una sola variante: edita directamente precio, costo, stock, duración y tipo.</li>
+      <li>Para múltiples variantes: haz clic en **"Agregar"** y configura:</li>
+      <li>- **Nombre** y **SKU** de la variante</li>
+      <li>- **Precio** y **Costo** en dólares</li>
+      <li>- **Stock** inicial</li>
+      <li>- **Duración** y **Tipo de Duración** (minutos, horas, días)</li>
+      <li>- **Tipo**: servicio, pieza, o servicio externo</li>
+      <li>- **Variante por defecto**: marcar si aplica</li>
+      <li>Agrega hasta **5 imágenes** por producto con gestión de orden.</li>
+    </ul>
+  </Step>
+</Steps>
+
+### B. Gestión de Categorías
+
+<Steps titleSize="h3">
+  <Step title="Paso 4 · Administrar Categorías" icon="folder-tree" iconType="solid" stepNumber={4}>
+    Gestiona la estructura de categorías de productos.
+    <ul>
+      <li>Navega a **"Configuración"** > **"Categorías"**.</li>
+      <li>Visualiza el árbol de categorías existente.</li>
+      <li>Las categorías se obtienen automáticamente de la base de datos.</li>
+    </ul>
+  </Step>
+
+  <Step title="Paso 5 · Crear Nueva Categoría" icon="folder-plus" iconType="solid" stepNumber={5}>
+    Añade una nueva categoría al sistema.
+    <ul>
+      <li>Haz clic en **"Nueva Categoría"**.</li>
+      <li>Ingresa el **Nombre** de la categoría.</li>
+      <li>Selecciona una **Categoría Padre** si es subcategoría.</li>
+      <li>La nueva categoría estará disponible inmediatamente para asignar a productos.</li>
+    </ul>
+  </Step>
+</Steps>
+
+### C. Gestión de Proveedores
+
+<Steps titleSize="h3">
+  <Step title="Paso 6 · Administrar Proveedores" icon="truck" iconType="solid" stepNumber={6}>
+    Gestiona la información de proveedores.
+    <ul>
+      <li>Navega a **"Configuración"** > **"Proveedores"**.</li>
+      <li>Visualiza la lista de proveedores existentes.</li>
+      <li>Los proveedores se obtienen automáticamente de la base de datos.</li>
+    </ul>
+  </Step>
+
+  <Step title="Paso 7 · Agregar Nuevo Proveedor" icon="user-plus" iconType="solid" stepNumber={7}>
+    Registra un nuevo proveedor en el sistema.
+    <ul>
+      <li>Haz clic en **"Agregar Proveedor"**.</li>
+      <li>Completa la información:</li>
+      <li>- **Nombre** del proveedor</li>
+      <li>- **Contacto**, **Email**, **Teléfono**</li>
+      <li>- **Términos de Pago** y condiciones</li>
+      <li>El proveedor estará disponible para asignar a productos inmediatamente.</li>
+    </ul>
+  </Step>
+</Steps>
+
+### D. Importación desde Shopify
+
+<Steps titleSize="h3">
+  <Step title="Paso 8 · Iniciar Proceso de Importación" icon="download" iconType="solid" stepNumber={8}>
+    Importa productos existentes desde tu tienda Shopify.
+    <ul>
+      <li>Ve a **"Productos"** > **"Importar desde Shopify"**.</li>
+      <li>Se abrirá un modal mostrando todos los productos disponibles en Shopify.</li>
+      <li>Usa la **barra de búsqueda** para encontrar productos específicos.</li>
+    </ul>
+  </Step>
+
+  <Step title="Paso 9 · Seleccionar y Configurar Productos" icon="check-square" iconType="solid" stepNumber={9}>
+    Elige qué productos importar y cómo configurarlos.
+    <ul>
+      <li>Marca los productos que deseas importar usando las casillas de verificación.</li>
+      <li>Usa **"Seleccionar todos"** para importar múltiples productos.</li>
+      <li>Para cada producto seleccionado, configura:</li>
+      <li>- **Activo**: Si el producto estará disponible en el sistema</li>
+      <li>- **Público**: Si será visible para los clientes</li>
+      <li>Los productos ya importados se muestran con badge **"Ya importado"**.</li>
+    </ul>
+  </Step>
+
+  <Step title="Paso 10 · Completar Importación" icon="upload" iconType="solid" stepNumber={10}>
+    Ejecuta el proceso de importación.
+    <ul>
+      <li>Revisa el resumen: **"X productos seleccionados"**.</li>
+      <li>Haz clic en **"Importar X productos"**.</li>
+      <li>Espera a que se complete el proceso (muestra indicador de progreso).</li>
+      <li>Los productos importados aparecerán en tu catálogo local con sus variantes e imágenes.</li>
+    </ul>
+  </Step>
+</Steps>
+
+### E. Sincronización con Shopify
+
+<Steps titleSize="h3">
+  <Step title="Paso 11 · Sincronización Manual" icon="sync-alt" iconType="solid" stepNumber={11}>
+    Envía productos locales a Shopify.
+    <ul>
+      <li>En la lista de productos, localiza el producto a sincronizar.</li>
+      <li>Haz clic en el botón de **sincronización** (ícono de refresh).</li>
+      <li>Espera a que se complete el proceso (ícono gira mientras sincroniza).</li>
+      <li>Verifica el **Estado de Sincronización** en los indicadores.</li>
+    </ul>
+  </Step>
+
+  <Step title="Paso 12 · Ver Estado de Sincronización" icon="info-circle" iconType="solid" stepNumber={12}>
+    Monitorea el estado de sincronización de productos.
+    <ul>
+      <li>Los indicadores muestran:</li>
+      <li>- **Verde**: Sincronizado correctamente</li>
+      <li>- **Amarillo**: Pendiente de sincronización</li>
+      <li>- **Rojo**: Error en la sincronización</li>
+      <li>Haz clic en **"Abrir en Shopify"** para ver el producto en tu tienda.</li>
+      <li>El sistema muestra la **ID de Shopify** y **Última Sincronización**.</li>
+    </ul>
+  </Step>
+</Steps>
+
+### F. Mantenimiento y Operaciones
+
+<Steps titleSize="h3">
+  <Step title="Paso 13 · Búsqueda y Filtrado" icon="search" iconType="solid" stepNumber={13}>
+    Encuentra productos rápidamente en el catálogo.
+    <ul>
+      <li>Usa la **barra de búsqueda** para filtrar por:</li>
+      <li>- Nombre del producto</li>
+      <li>- Descripción</li>
+      <li>- Categoría</li>
+      <li>- Proveedor</li>
+      <li>Usa el botón **"Mostrar/Ocultar Inactivos"** para filtrar productos activos.</li>
+      <li>Los resultados muestran: nombre, categoría, proveedor, variantes, rango de precios, estados y acciones Shopify.</li>
+    </ul>
+  </Step>
+
+  <Step title="Paso 14 · Edición de Productos" icon="edit" iconType="solid" stepNumber={14}>
+    Modifica productos existentes.
+    <ul>
+      <li>Haz clic en cualquier fila de la tabla para abrir el modal de edición.</li>
+      <li>Modifica cualquier campo: información básica, variantes, imágenes, estados.</li>
+      <li>Los cambios se guardan automáticamente en la base de datos.</li>
+      <li>El sistema muestra **toast notifications** con el resultado de la operación.</li>
+    </ul>
+  </Step>
+
+  <Step title="Paso 15 · Eliminación de Productos" icon="trash-alt" iconType="solid" stepNumber={15}>
+    Remueve productos del sistema.
+    <ul>
+      <li>En el modal de edición, haz clic en el botón **"Eliminar"** (ícono de basura).</li>
+      <li>Confirma la eliminación en el diálogo de confirmación.</li>
+      <li>El producto se elimina permanentemente del sistema.</li>
+      <li>Considera desactivar en lugar de eliminar para mantener historial.</li>
+    </ul>
+  </Step>
+</Steps>
+
+---
+
+### Notas Importantes
+
+- **Validaciones**: El sistema requiere nombre de producto y variante para crear nuevos items.
+- **Imágenes**: Se pueden subir hasta 5 imágenes por producto con gestión de orden y primario.
+- **Sincronización**: Los cambios locales se pueden enviar a Shopify, pero no viceversa automáticamente.
+- **Tipos de Producto**: Los tipos (servicio, pieza, servicio externo) afectan la funcionalidad y validaciones.
+- **Backup**: Siempre verifica la sincronización después de cambios masivos.
+
+### Consejos para Eficiencia
+
+- Usa **importación desde Shopify** para catálogos grandes en lugar de crear manualmente.
+- Configura productos como **inactivos** inicialmente para pruebas antes de publicarlos.
+- Mantén la **jerarquía de categorías** organizada para mejor navegación.
+- Usa **búsqueda y filtros** para encontrar productos rápidamente en catálogos grandes.
+- Revisa regularmente el **estado de sincronización** para mantener consistencia entre sistemas.

@@ -1,0 +1,106 @@
+---
+title: "SOP · Monitor de Sistema Shopify"
+description: "Procedimiento para monitoreo de logs y salud del sistema de integración con Shopify"
+---
+
+## Procedimiento Operativo Estándar para el Monitor de Shopify
+
+Este SOP establece la guía para acceder, monitorear y gestionar la salud del sistema de integración con Shopify.
+
+---
+
+### Monitoreo y Análisis de Errores
+
+<Steps titleSize="h3">
+  <Step title="Paso 1 · Acceso a Logs" icon="ListChecksIcon" stepNumber={1}>
+    Accede al registro de actividad de la sincronización.
+    <ul>
+      <li>Hacer clic en "Shopify" en el menú principal.</li>
+      <li>Seleccionar "Logs" en el menú superior.</li>
+      <li>Revisar los logs de sincronización recientes.</li>
+    </ul>
+  </Step>
+
+  <Step title="Paso 2 · Análisis de Errores" icon="BugIcon" stepNumber={2}>
+    Identifica y documenta los fallos de sincronización.
+    <ul>
+      <li>**Tipos de Error Comunes:** Autenticación (INVALID\_TOKEN), Errores de Sincronización.</li>
+      <li>**Documentar:** Tomar nota de los códigos de error, marcas de tiempo e IDs de transacción.</li>
+    </ul>
+  </Step>
+</Steps>
+
+---
+
+### Gestión y Mantenimiento
+
+<Steps titleSize="h3">
+  <Step title="Paso 3 · Verificar Salud del Sistema" icon="HeartPulseIcon" stepNumber={3}>
+    Monitorea el estado general de la integración.
+    <ul>
+      <li>Navegar a "Salud del Sistema".</li>
+      <li>Verificar el estado general y las alertas activas.</li>
+    </ul>
+  </Step>
+
+  <Step title="Paso 4 · Acciones Inmediatas" icon="ZapIcon" stepNumber={4}>
+    Aplica correcciones rápidas a la cola de sincronización.
+    <ul>
+      <li>Limpiar cola de sincronización.</li>
+      <li>Reencolar ítems pendientes.</li>
+      <li>Resolver conflictos automáticamente.</li>
+    </ul>
+  </Step>
+
+  <Step title="Paso 5 · Resolución de Ítems Bloqueados" icon="SearchIcon" stepNumber={5}>
+    Investiga ítems que causan errores persistentes.
+    <ul>
+      <li>Hacer clic en "Investigar Ítems Bloqueados".</li>
+      <li>Revisar la lista de ítems en estado de error y verificar su antigüedad.</li>
+    </ul>
+  </Step>
+
+  <Step title="Paso 6 · Sincronización Forzada" icon="RefreshCwIcon" stepNumber={6}>
+    Reinicia o actualiza los procesos de sincronización.
+    <ul>
+      <li>Usar **"Forzar Sincronización Completa"** para reiniciar el proceso.</li>
+      <li>Seleccionar **"Recalcular Estados"** para actualizar los estados de los ítems.</li>
+    </ul>
+  </Step>
+</Steps>
+
+---
+
+### Códigos de Error Comunes
+
+<Callout type="warning" title="Códigos de Error Comunes">
+  <ul>
+    <li>**INVALID\_TOKEN:** Problemas de autenticación. (Acción: Verificar y renovar credenciales).</li>
+    <li>**SYNC\_ERROR:** Fallos en la sincronización. (Acción: Verificar conexión con Shopify y límites de API).</li>
+    <li>**TIMEOUT:** Tiempos de espera excedidos. (Acción: Verificar estabilidad de la red y reintentar).</li>
+  </ul>
+</Callout>
+
+### Consejos y Flujo de Trabajo
+
+<Info>
+  <div className="space-y-4">
+    <h3 className="font-semibold">🔄 Flujo de Trabajo Recomendado</h3>
+    <ul className="list-disc pl-5">
+      <li>**Monitoreo:** Revisar logs y estado del sistema.</li>
+      <li>**Detección:** Identificar errores y advertencias.</li>
+      <li>**Diagnóstico:** Analizar causas raíz.</li>
+      <li>**Resolución:** Aplicar acciones correctivas.</li>
+      <li>**Verificación:** Confirmar resolución de problemas.</li>
+      <li>**Documentación:** Registrar acciones tomadas.</li>
+    </ul>
+    
+    <h3 className="font-semibold mt-4">⚠️ Acciones de Mantenimiento</h3>
+    <ul className="list-disc pl-5">
+        <li>Revisar logs diariamente y documentar errores recurrentes.</li>
+        <li>No ignorar múltiples errores del mismo tipo.</li>
+        <li>Limpiar logs antiguos periódicamente.</li>
+        <li>Verificar conexión con Shopify y tokens de autenticación.</li>
+    </ul>
+  </div>
+</Info>
